@@ -1,76 +1,5 @@
 {
   "sections": {
-    "featured_product_CqJnTN": {
-      "type": "featured-product",
-      "blocks": {
-        "text_zPzLa4": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_EVkjUF": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_RVEwDG": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_qLL8tE": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_aVi7dE": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons_pBCXac": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_LeXVa4": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_zPzLa4",
-        "title_EVkjUF",
-        "price_RVEwDG",
-        "variant_picker_qLL8tE",
-        "quantity_selector_aVi7dE",
-        "buy_buttons_pBCXac",
-        "share_LeXVa4"
-      ],
-      "settings": {
-        "product": "",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -140,7 +69,6 @@
     }
   },
   "order": [
-    "featured_product_CqJnTN",
     "image_banner",
     "featured_collection"
   ]
