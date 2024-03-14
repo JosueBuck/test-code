@@ -1,0 +1,107 @@
+<div class="page-width">
+  <p class="" id="text-paragraph-{{ section.id }}">{{ section.settings.text }}</p>
+</div>
+
+<style>
+  #text-paragraph-{{ section.id }} {
+    text-align: {{ section.settings.text_alignment }};
+  }
+
+  .inactive {
+    opacity: {{ section.settings.inactive_opacity }};
+    transition: opacity 0.5s ease;
+  }
+
+  .active {
+    opacity: 1;
+    font-size: {{ section.settings.font_size }}px;
+    color: {{ section.settings.text_color }};
+    transition: opacity 0.5s ease;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var textElement = document.getElementById('text-paragraph-{{ section.id }}');
+    var words = textElement.innerText.split(' ');
+    textElement.innerHTML = ''; // clear the existing content
+
+    words.forEach(function(word) {
+      var span = document.createElement('span');
+      span.className = 'inactive';
+      span.textContent = word.replace(/-/g, '\u2011') + ' '; // replace hyphens with non-breaking hyphens
+      textElement.appendChild(span);
+    });
+
+    window.addEventListener('scroll', function() {
+      var spans = textElement.getElementsByTagName('span');
+      var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+      var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+      for (var i = 0; i < spans.length; i++) {
+        var spanRect = spans[i].getBoundingClientRect();
+        var spanBottom = spanRect.bottom;
+
+        if ( (spanRect.bottom - windowHeight/2) >= 0) {
+          spans[i].classList.remove('active');
+          spans[i].classList.add('inactive');
+        } else {
+          spans[i].classList.remove('inactive');
+          spans[i].classList.add('active');
+        }
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.scrolling_text.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "id": "text",
+      "type": "text",
+      "label": "Text",
+      "default": "Default text"
+    },
+    {
+      "id": "text_color",
+      "type": "color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "id": "font_size",
+      "type": "range",
+      "label": "Font Size",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "id": "text_alignment",
+      "type": "select",
+      "label": "Text Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "id": "inactive_opacity",
+      "type": "range",
+      "label": "Inactive Opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0
+    }
+  ]
+}
+{% endschema %}
