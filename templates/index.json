@@ -87,7 +87,7 @@
       "type": "text-scroll",
       "settings": {
         "text": "Default text",
-        "text_color": "#000000",
+        "text_color": "#e11c1c",
         "font_size": 32,
         "text_alignment": "left",
         "inactive_opacity": 0.1
