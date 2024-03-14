@@ -3349,9 +3349,9 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "scrolling_text": {
+      "name": "Scrollender Text"
     }
-  }, 
-  "scrolling_text": {
-    "name": "Scrollender Text"
   }
 }
