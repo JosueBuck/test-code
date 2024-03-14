@@ -3351,7 +3351,10 @@
       }
     },
     "scrolling_text": {
-      "name": "Scrollender Text"
+      "name": "Scrollender Text",
+      "presets": {
+        "default": "Scrollender Text (Standart)"
+      }
     }
   }
 }

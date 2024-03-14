@@ -3351,7 +3351,10 @@
       }
     },
     "scrolling_text": {
-      "name": "Scrollable text with opacity"
+      "name": "Scrollable text with opacity",
+      "presets": {
+        "default": "Scrollable text with opacity (basic)"
+      }
     }
   }
 }
