@@ -1,5 +1,54 @@
 {
   "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "text_scroll_Nd7G3Y": {
+      "type": "text-scroll",
+      "settings": {
+        "text": "Erlebe eine magische Welt mit Stapelstein® Inside. Schicht für Schicht entfaltet sich eine andere Farbwelt und regt zu vielseitigen kreativen Spiel- und Bewegungsabenteuern an.",
+        "text_color": "#000000",
+        "font_size": 50,
+        "text_alignment": "left",
+        "inactive_opacity": 0.1
+      }
+    },
     "multirow_t4nqqB": {
       "type": "multirow",
       "blocks": {
@@ -83,45 +132,6 @@
         "padding_bottom": 36
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -149,23 +159,13 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "text_scroll_Nd7G3Y": {
-      "type": "text-scroll",
-      "settings": {
-        "text": "Erlebe eine magische Welt mit Stapelstein® Inside. Schicht für Schicht entfaltet sich eine andere Farbwelt und regt zu vielseitigen kreativen Spiel- und Bewegungsabenteuern an.",
-        "text_color": "#000000",
-        "font_size": 50,
-        "text_alignment": "left",
-        "inactive_opacity": 0.1
-      }
     }
   },
   "order": [
+    "image_banner",
+    "text_scroll_Nd7G3Y",
     "multirow_t4nqqB",
     "featured_collection_BgzndN",
-    "image_banner",
-    "featured_collection",
-    "text_scroll_Nd7G3Y"
+    "featured_collection"
   ]
 }
