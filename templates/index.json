@@ -83,16 +83,6 @@
         "padding_bottom": 36
       }
     },
-    "text_scroll_eYr7kB": {
-      "type": "text-scroll",
-      "settings": {
-        "text": "Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text Default text",
-        "text_color": "#e11c1c",
-        "font_size": 32,
-        "text_alignment": "left",
-        "inactive_opacity": 0.1
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -164,7 +154,6 @@
   "order": [
     "multirow_t4nqqB",
     "featured_collection_BgzndN",
-    "text_scroll_eYr7kB",
     "image_banner",
     "featured_collection"
   ]
