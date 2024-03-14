@@ -98,7 +98,7 @@
       "settings": {
         "text": "Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section",
         "text_color": "#000000",
-        "font_size": 16,
+        "font_size": 22,
         "text_alignment": "left",
         "inactive_opacity": 0
       }
