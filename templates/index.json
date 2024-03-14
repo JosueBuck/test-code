@@ -55,16 +55,6 @@
         "padding_bottom": 36
       }
     },
-    "text_scroll_dGxhMh": {
-      "type": "text-scroll",
-      "settings": {
-        "text": "This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text, This is a default text",
-        "text_color": "#000000",
-        "font_size": 40,
-        "text_alignment": "center",
-        "inactive_opacity": 0.6
-      }
-    },
     "featured_collection_BgzndN": {
       "type": "featured-collection",
       "settings": {
@@ -93,14 +83,14 @@
         "padding_bottom": 36
       }
     },
-    "text-scroll": {
+    "text_scroll_eYr7kB": {
       "type": "text-scroll",
       "settings": {
-        "text": "Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section, Default text for text-scroll section",
+        "text": "Default text",
         "text_color": "#000000",
-        "font_size": 22,
+        "font_size": 32,
         "text_alignment": "left",
-        "inactive_opacity": 0
+        "inactive_opacity": 0.5
       }
     },
     "image_banner": {
@@ -173,9 +163,8 @@
   },
   "order": [
     "multirow_t4nqqB",
-    "text_scroll_dGxhMh",
     "featured_collection_BgzndN",
-    "text-scroll",
+    "text_scroll_eYr7kB",
     "image_banner",
     "featured_collection"
   ]
