@@ -3351,7 +3351,7 @@
       }
     },
     "scrolling_text": {
-      "name": "Scrollender Text"
+      "name": "Scrollable text with opacity"
     }
   }
 }
